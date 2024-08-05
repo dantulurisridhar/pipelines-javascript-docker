@@ -14,7 +14,8 @@ variables:
   imageRepository: 'dantulurisridharpipelinesjavascriptdocker'
   containerRegistry: 'sridhardcontainers.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
-  tag: '$(Build.BuildId)'
+  # tag: '$(Build.BuildId)'
+  tag: 'latest'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
